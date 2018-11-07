@@ -1,8 +1,22 @@
+"""
+Script: SeptaNext5
+Version: 1.0
+Created: 11/07/2018
+Created By: Paul R. Sesink Clee
+Updated: --/--/----
+Updated By: Paul R. Sesink Clee
+Summary: Sometimes joins in ArcMap/Pro don't behave well when field types aren't the same
+         or for other unknown reasons.  This script contains a function that creates a join
+         using python dictionaries to avoid field type discrepancies and copies the desired
+         fields and field values to the input layer.
+"""
+
+
 import arcpy
 
 def fieldjoiner(intable, infield, jointable, joinfield, addfields):
     # adding new fields to intable
-    print(f'Adding new fields to {intable}' )
+    print(f'Adding new fields to {intable}')
     fields = arcpy.ListFields(jointable)
     for addfieldName in addfields:
         for field in fields:

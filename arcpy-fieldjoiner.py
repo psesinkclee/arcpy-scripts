@@ -1,5 +1,5 @@
 """
-Script: SeptaNext5
+Script: arcpy-fieldjoiner
 Version: 1.0
 Created: 11/07/2018
 Created By: Paul R. Sesink Clee
